@@ -9,10 +9,9 @@ document.onselectionchange = function() {
 
   let mouseUp = false;
 
-  document.addEventListener("onmouseup", () => {
 
-  // if(selection.isCollapsed){
-    // cloned.innerHTML += current.innerHTML;
+  if(selection.isCollapsed){
+    cloned.innerHTML += current.innerHTML;
 
     var divEl = document.createElement("div");
 
@@ -41,11 +40,10 @@ document.onselectionchange = function() {
     // divStyler.style.position = absolute;
     current.innerHTML = current.innerHTML = "" ;
 
-  });
-  // }
-  // else{
+  }
+  else{
     current.innerHTML = current.innerHTML = "" ;
-  // }
+  }
 
   // Clone DOM nodes from ranges (we support multiselect here)
   for (let i = 0; i < selection.rangeCount; i++) {
