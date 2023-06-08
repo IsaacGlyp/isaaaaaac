@@ -3,7 +3,6 @@ import './style.css'
 let divCount = 1;
 
 
-document.addEventListener("onchange", () => {
 document.onselectionchange = function() {
   let selection = document.getSelection();
 
@@ -51,4 +50,3 @@ document.onselectionchange = function() {
     current.append(selection.getRangeAt(i).cloneContents());
   }
 };
-});
