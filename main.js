@@ -10,7 +10,9 @@ document.onselectionchange = function() {
   let mouseUp = false;
 
   document.addEventListener("mouseup", () => {
-    document.getSelection.collapse;
+    var body = document.getElementsByTagName("body")[0];
+     window.getSelection().collapse(body,0);
+    // selection.collapse();
     console.log("hollo");
 
   });
