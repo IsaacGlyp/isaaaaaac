@@ -7,18 +7,35 @@ let startTemp = 1;
 let startAnim = 0;
 ;
 
-setInterval(displayHello, 200);
 
-function displayHello() {
+// setInterval(displayHello, 200);
+
+// function displayHello() {
+//   if(startAnim < 3){
+//     startAnim += startTemp;
+//   }
+//   else{
+//     startAnim = 0;
+//   }
+
+//   document.getElementById("start").innerHTML = "";
+//   document.getElementById("start").innerHTML += `make a selection to begin${startAr[startAnim]}`;
+// }
+
+setInterval(function() {
+
   if(startAnim < 3){
     startAnim += startTemp;
   }
   else{
     startAnim = 0;
   }
+
   document.getElementById("start").innerHTML = "";
   document.getElementById("start").innerHTML += `make a selection to begin${startAr[startAnim]}`;
-}
+}, 200);
+
+
 
 document.addEventListener("mousedown", () => {
   clearInterval(null);
