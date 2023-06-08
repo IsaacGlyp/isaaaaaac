@@ -5,16 +5,9 @@ var divCount = 1;
 const startAr = [" / ", " -- ", " \\ ", " | "];
 let startTemp = 1;
 let startAnim = 0;
+;
 
-let interval = 200;
-
-document.addEventListener("mousedown", () => {
-  clearInterval(interval);
-  interval = null;
-  document.getElementById("start").innerHTML = "";
-});
-
-setInterval(displayHello, interval);
+setInterval(displayHello, 200);
 
 function displayHello() {
   if(startAnim < 3){
@@ -27,6 +20,10 @@ function displayHello() {
   document.getElementById("start").innerHTML += `make a selection to begin${startAr[startAnim]}`;
 }
 
+document.addEventListener("mousedown", () => {
+  clearInterval(null);
+  document.getElementById("start").innerHTML = "";
+});
 
 const titAr = ["💚","🧩", "🦎","🤮","🧽","🤮","😵","✨","🧚‍♂️","💫","💿","📡","🧼","🦠","🔮"];
 let titAdd  = 0;
