@@ -17,10 +17,10 @@ document.onselectionchange = function() {
 
     divEl.innerHTML += current.innerHTML;
 
-    window.getElementById("newDivs").prepend(divEl);
+    document.getElementById("newDivs").prepend(divEl);
     //document.getElementById("newDivs").appendChild(divEl);
 
-    divStyler = window.getElementById(`Div${divCount}`);
+    divStyler = document.getElementById(`Div${divCount}`);
     mongoolStyler =  divStyler.querySelector(".mongool");
 
     // divStyler.style.overflowY = 'scroll';
@@ -50,5 +50,4 @@ document.onselectionchange = function() {
   for (let i = 0; i < selection.rangeCount; i++) {
     current.append(selection.getRangeAt(i).cloneContents());
   }
-
 };
