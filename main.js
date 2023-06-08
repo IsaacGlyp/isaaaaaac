@@ -6,44 +6,23 @@ const startAr = [" / ", " -- ", " \\ ", " | "];
 let startTemp = 1;
 let startAnim = 0;
 
+document.onload = function animatior(){
 
+  setInterval(displayHello, 200);
 
-// setInterval(displayHello, 200);
+    function displayHello() {
+      if(startAnim < 3){
+        startAnim += startTemp;
+      }
+      else{
+        startAnim = 0;
+      }
 
-// function displayHello() {
-//   if(startAnim < 3){
-//     startAnim += startTemp;
-//   }
-//   else{
-//     startAnim = 0;
-//   }
+      document.getElementById("start").innerHTML = "";
+      document.getElementById("start").innerHTML += `make a selection to begin${startAr[startAnim]}`;
+    }
 
-//   document.getElementById("start").innerHTML = "";
-//   document.getElementById("start").innerHTML += `make a selection to begin${startAr[startAnim]}`;
-// }
-
-let timerId;
-
-start.addEventListener('click', function() {
-	timerId = setInterval(function() {
-
-  if(startAnim < 3){
-    startAnim += startTemp;
-  }
-  else{
-    startAnim = 0;
-  }
-
-  document.getElementById("start").innerHTML = "";
-  document.getElementById("start").innerHTML += `make a selection to begin${startAr[startAnim]}`;
-}, 200);
-});
-
-stop.addEventListener('click', function() {
-	clearInterval(timerId);
-  timerId = null;
-  document.getElementById("start").innerHTML = "";
-});
+};
 
 // document.addEventListener("mousedown", () => {
 //   clearInterval(null);
