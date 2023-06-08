@@ -11,9 +11,8 @@ document.onselectionchange = function() {
 
   document.addEventListener("mouseup", () => {
     var body = document.getElementsByTagName("body")[0];
-     window.getSelection().collapse(body,0);
-    // selection.collapse();
-    console.log("hollo");
+    selection().collapse(body,0);
+    console.log("heullo");
 
   });
 
