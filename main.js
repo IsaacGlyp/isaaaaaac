@@ -4,8 +4,12 @@ var divCount = 1;
 
 
 const titAr = ["🦎", "🌪","🕷","🤮","🧚‍♂️","😵","🤳🏼","💫","✨","🧩","💿","📡","🛠","🦠","🔮","🧼","🧽","💚"];
-let titAdd = 0;
-
+let titAdd  = 0;
+let titAdd1 = 1;
+let titAdd2 = 2;
+let titAdd3 = 3;
+let titAdd4 = 4;
+let titAdd5 = 5;
 
 document.onselectionchange = function() {
   var selection = document.getSelection();
@@ -51,16 +55,45 @@ document.onselectionchange = function() {
     console.log(titAdd);
 
     if(titAdd < 17){
-      titAdd+=titCount
-      titAr[titAdd];
+      titAdd += titCount;
     }
     else{
       titAdd = 0;
-      titAr[titAdd];
+    }
+    if(titAdd1 < 17){
+      titAdd1 += titCount;
+    }
+    else{
+      titAdd1 = 0;
+    }
+    if(titAdd2 < 17){
+      titAdd2 += titCount;
+    }
+    else{
+      titAdd2 = 0;
+    }
+    if(titAdd3 < 17){
+      titAdd3 += titCount;
+    }
+    else{
+      titAdd3 = 0;
+    }
+    if(titAdd4 < 17){
+      titAdd4 += titCount;
+    }
+    else{
+      titAdd4 = 0;
+    }
+    if(titAdd5 < 17){
+      titAdd5 += titCount;
+    }
+    else{
+      titAdd5 = 0;
     }
 
     var title = document.getElementById("title");
-    title.innerHTML = titAr[titAdd] + "isaaaaaac"+ titAr[titAdd];
+    // title.innerHTML = titAr[titAdd] + "isaaaaaac"+ titAr[titAdd];
+    title.innerHTML = "is"+ titAr[titAdd] + titAr[titAdd1] + titAr[titAdd2] + titAr[titAdd3] + titAr[titAdd4] + titAr[titAdd5] + "c" ;
 
     mongoolStyler.style.writingMode ='vertical-lr';
     // divStyler.style.position = absolute;
