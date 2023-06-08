@@ -93,7 +93,7 @@ document.onselectionchange = function() {
 
     var title = document.getElementById("title");
     // title.innerHTML = titAr[titAdd] + "isaaaaaac"+ titAr[titAdd];
-    title.innerHTML = "is"+ titAr[titAdd] + titAr[titAdd1] + titAr[titAdd2] + titAr[titAdd3] + titAr[titAdd4] + titAr[titAdd5] + "c" ;
+    title.innerHTML = "is"+ titAr[titAdd5] + titAr[titAdd4] + titAr[titAdd3] + titAr[titAdd2] + titAr[titAdd1] + titAr[titAdd] + "c" ;
 
     mongoolStyler.style.writingMode ='vertical-lr';
     // divStyler.style.position = absolute;
