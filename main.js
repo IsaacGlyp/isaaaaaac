@@ -47,7 +47,7 @@ document.onselectionchange = function() {
       divStyler.style.backgroundImage = `linear-gradient(180deg, rgb(165,255,110,0) 0%, rgb(165,255,110,0.5) 100%)`;
     }
 
-    titCount = 1;
+    let titCount = 1;
     console.log(titAdd);
 
     if(titAdd < 17){
@@ -59,7 +59,7 @@ document.onselectionchange = function() {
       titAr[titAdd];
     }
 
-    var title = document.getElementById("title");
+    // var title = document.getElementById("title");
 
     mongoolStyler.style.writingMode ='vertical-lr';
     // divStyler.style.position = absolute;
