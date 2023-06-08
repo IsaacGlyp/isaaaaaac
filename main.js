@@ -31,7 +31,7 @@ const startElement = document.getElementById("start");
 
 
 document.addEventListener("mousedown", () => {
-  mouseErr += tr1ue;
+  mouseErr += 1;
 });
 
 const titAr = ["💚","🧩", "🦎","🤮","🧽","🤮","😵","✨","🧚‍♂️","💫","💿","📡","🧼","🦠","🔮"];
