@@ -2,6 +2,11 @@ import './style.css'
 
 var divCount = 1;
 
+
+const titAr = ["🦎", "🌪","🕷","🤮","🧚‍♂️","😵","🤳🏼","💫","✨","🧩","💿","📡","🛠","🦠","🔮","🧼","🧽","💚"];
+let titAdd = 0;
+
+
 document.onselectionchange = function() {
   var selection = document.getSelection();
 
@@ -18,6 +23,7 @@ document.onselectionchange = function() {
     var divEl = document.createElement("div");
 
     divCount += 1;
+
     divEl.id = `Div${divCount}`;
 
     divEl.innerHTML += current.innerHTML;
@@ -40,6 +46,20 @@ document.onselectionchange = function() {
       let b = Math.random() * 50;
       divStyler.style.backgroundImage = `linear-gradient(180deg, rgb(165,255,110,0) 0%, rgb(165,255,110,0.5) 100%)`;
     }
+
+    titCount = 1;
+
+
+    if(titAdd < 17){
+      titAdd+=titCount
+      titAr[titAdd];
+    }
+    else{
+      titAdd = 0;
+      titAr[titAdd];
+    }
+
+    var title = document.getElementById("title");
 
     mongoolStyler.style.writingMode ='vertical-lr';
     // divStyler.style.position = absolute;
