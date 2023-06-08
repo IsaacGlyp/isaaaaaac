@@ -20,8 +20,9 @@ function displayHello() {
   document.getElementById("start").innerHTML += `make a selection to begin${startAr[startAnim]}`;
 }
 
-document.addEventListener("mousedown", () => {
+document.addEventListener("click", () => {
   clearInterval(interval);
+  document.getElementById("start").innerHTML = "";
 });
 
 const titAr = ["💚","🧩", "🦎","🤮","🧽","🤮","😵","✨","🧚‍♂️","💫","💿","📡","🧼","🦠","🔮"];
