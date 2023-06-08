@@ -7,7 +7,7 @@ let startTemp = 1;
 let startAnim = 0;
 
 
-setInterval(displayHello, 100);
+setInterval(displayHello, 500);
 
 function displayHello() {
 
@@ -19,7 +19,7 @@ function displayHello() {
   }
 
   document.getElementById("start").innerHTML = "";
-  document.getElementById("start").innerHTML += `Hello${startAr[startAnim]}`;
+  document.getElementById("start").innerHTML += `make a selection to begin${startAr[startAnim]}`;
 }
 
 const titAr = ["💚","🧩", "🦎","🤮","🧽","🤮","😵","✨","🧚‍♂️","💫","💿","📡","🧼","🦠","🔮"];
