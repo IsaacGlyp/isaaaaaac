@@ -7,6 +7,12 @@ let startTemp = 1;
 let startAnim = 0;
 
 let mouseErr = 0;
+
+document.addEventListener("mousedown", () => {
+  mouseErr += 1;
+});
+
+
 const startElement = document.getElementById("start");
 
   setInterval(displayHello, 200);
@@ -30,9 +36,6 @@ const startElement = document.getElementById("start");
     };
 
 
-document.addEventListener("mousedown", () => {
-  mouseErr += 1;
-});
 
 const titAr = ["💚","🧩", "🦎","🤮","🧽","🤮","😵","✨","🧚‍♂️","💫","💿","📡","🧼","🦠","🔮"];
 let titAdd  = 0;
