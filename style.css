@@ -1,6 +1,6 @@
 body{
   /* background-color: rgb(238, 255, 0); */
-  background-color: #9eab89;
+  background-color: #cdd9cf;
   font-family: monospace;
   font-size: larger;
 }
@@ -16,7 +16,7 @@ body{
 
 .text::-moz-selection{
   color: #2a2038;
-  background: #8588a7;
+  background: #7ff456;
 }
 
 .current{
