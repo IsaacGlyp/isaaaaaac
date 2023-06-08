@@ -7,7 +7,7 @@ document.onselectionchange = function() {
 
   document.addEventListener("mouseup", () => {
     var body = document.getElementsByTagName("body")[0];
-    document.getSelectionelection().collapse(body,0);
+    document.getSelection().collapse(body,0);
     console.log("heullo");
 
   });
