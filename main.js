@@ -1,15 +1,15 @@
 import './style.css'
 
-let divCount = 1;
+var divCount = 1;
 
 
 document.onselectionchange = function() {
-  let selection = document.getSelection();
+  var selection = document.getSelection();
 
   if(selection.isCollapsed){
     // cloned.innerHTML += current.innerHTML;
 
-    let divEl = document.createElement("div");
+    var divEl = document.createElement("div");
 
     divCount += 1;
     divEl.id = `Div${divCount}`;
@@ -17,8 +17,8 @@ document.onselectionchange = function() {
     divEl.innerHTML += current.innerHTML;
 
     document.getElementById("newDivs").prepend(divEl);
-    divStyler = document.getElementById(`Div${divCount}`);
-    mongoolStyler =  divStyler.querySelector(".mongool");
+    var divStyler = document.getElementById(`Div${divCount}`);
+    var mongoolStyler =  divStyler.querySelector(".mongool");
 
     divStyler.style.left = "0px";
     divStyler.style = "0px";
