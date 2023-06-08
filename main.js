@@ -11,6 +11,7 @@ document.onselectionchange = function() {
 
   document.addEventListener("mouseup", () => {
     selection.collapse;
+
   });
 
   if(selection.isCollapsed){
