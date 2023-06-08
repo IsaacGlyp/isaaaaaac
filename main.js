@@ -34,9 +34,9 @@ document.onselectionchange = function() {
     divStyler.style = "0px";
 
     if(divCount % 10 > 8){
-      divStyler.style.background = "rgb(200,200,200)";
+      divStyler.style.background = "rgb(123,100,175)";
       // mongoolStyler.style.color = "rgb(255,0,0)";
-      divStyler.style.color = "rgb(0,0,255)";
+      divStyler.style.color = "rgb(0,255,0)";
     }
     else{
       let r = Math.random() * 50;
