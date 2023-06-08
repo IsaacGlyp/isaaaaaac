@@ -26,6 +26,7 @@ document.onselectionchange = function() {
     // divStyler.style.overflowY = 'scroll';
     divStyler.style.left = "0px";
     divStyler.style = "0px";
+
     if(divCount % 10 > 8){
       divStyler.style.background = "rgb(200,200,200)";
       // mongoolStyler.style.color = "rgb(255,0,0)";
