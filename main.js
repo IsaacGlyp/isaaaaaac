@@ -1,6 +1,6 @@
 import './style.css'
 
-let divCount = 0;
+let divCount = 1;
 
 
 
