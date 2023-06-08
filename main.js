@@ -6,7 +6,8 @@ const startAr = [" / ", " -- ", " \\ ", " | "];
 let startTemp = 1;
 let startAnim = 0;
 
-document.onload = function animatior(){
+let mouseErr = 0;
+const startElement = document.getElementById("start");
 
   setInterval(displayHello, 200);
 
@@ -17,17 +18,21 @@ document.onload = function animatior(){
       else{
         startAnim = 0;
       }
+      if(mouseErr < 1){
 
-      document.getElementById("start").innerHTML = "";
-      document.getElementById("start").innerHTML += `make a selection to begin${startAr[startAnim]}`;
-    }
+      startElement.innerHTML = "";
+      startElement.innerHTML += `make a selection to begin${startAr[startAnim]}`;
+      }
+      else{
+      startElement.remove();
+      }
 
-};
+    };
 
-// document.addEventListener("mousedown", () => {
-//   clearInterval(null);
-//   document.getElementById("start").innerHTML = "";
-// });
+
+document.addEventListener("mousedown", () => {
+  mouseErr += tr1ue;
+});
 
 const titAr = ["💚","🧩", "🦎","🤮","🧽","🤮","😵","✨","🧚‍♂️","💫","💿","📡","🧼","🦠","🔮"];
 let titAdd  = 0;
