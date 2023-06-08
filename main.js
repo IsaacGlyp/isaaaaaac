@@ -24,7 +24,8 @@ let startAnim = 0;
 
 let timerId;
 
-setInterval(function() {
+start.addEventListener('click', function() {
+	timerId = setInterval(function() {
 
   if(startAnim < 3){
     startAnim += startTemp;
@@ -36,8 +37,9 @@ setInterval(function() {
   document.getElementById("start").innerHTML = "";
   document.getElementById("start").innerHTML += `make a selection to begin${startAr[startAnim]}`;
 }, 200);
+});
 
-document.addEventListener('click', function() {
+stop.addEventListener('click', function() {
 	clearInterval(timerId);
   document.getElementById("start").innerHTML = "";
 });
