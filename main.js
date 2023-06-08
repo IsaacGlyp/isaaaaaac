@@ -8,6 +8,7 @@ let startAnim = 0;
 
 
 setInterval(displayHello, 200);
+
 function displayHello() {
   if(startAnim < 3){
     startAnim += startTemp;
@@ -20,7 +21,7 @@ function displayHello() {
 }
 
 document.addEventListener("mousedown", () => {
-  !displayHello;
+  clearInterval(interval);
 });
 
 const titAr = ["💚","🧩", "🦎","🤮","🧽","🤮","😵","✨","🧚‍♂️","💫","💿","📡","🧼","🦠","🔮"];
