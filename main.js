@@ -2,11 +2,9 @@ import './style.css'
 
 let divCount = 1;
 
-let selection = document.getSelection();
-
 
 document.onselectionchange = function() {
-  // let selection = document.getSelection();
+  let selection = document.getSelection();
 
   if(selection.isCollapsed){
     // cloned.innerHTML += current.innerHTML;
@@ -19,12 +17,9 @@ document.onselectionchange = function() {
     divEl.innerHTML += current.innerHTML;
 
     document.getElementById("newDivs").prepend(divEl);
-    //document.getElementById("newDivs").appendChild(divEl);
-
     divStyler = document.getElementById(`Div${divCount}`);
     mongoolStyler =  divStyler.querySelector(".mongool");
 
-    // divStyler.style.overflowY = 'scroll';
     divStyler.style.left = "0px";
     divStyler.style = "0px";
 
@@ -45,7 +40,6 @@ document.onselectionchange = function() {
 
     current.innerHTML = current.innerHTML = "" ;
   }
-
 
   // Clone DOM nodes from ranges (we support multiselect here)
   for (let i = 0; i < selection.rangeCount; i++) {
