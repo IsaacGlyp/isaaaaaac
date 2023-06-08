@@ -11,6 +11,11 @@ body{
 
 }
 
+::selection {
+  color: rgb(21, 255, 0);
+  background: rgb(156,0,255);
+}
+
 .start{
   color: #727272;
 }
