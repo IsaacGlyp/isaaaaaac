@@ -7,7 +7,7 @@ let startTemp = 1;
 let startAnim = 0;
 
 
-setInterval(displayHello, 500);
+setInterval(displayHello, 200);
 
 function displayHello() {
 
