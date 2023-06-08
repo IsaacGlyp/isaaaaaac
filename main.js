@@ -7,8 +7,6 @@ var divCount = 1;
 document.onselectionchange = function() {
   var selection = document.getSelection();
 
-  let mouseUp = false;
-
   document.addEventListener("mouseup", () => {
     var body = document.getElementsByTagName("body")[0];
     selection().collapse(body,0);
