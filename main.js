@@ -2,7 +2,12 @@ import './style.css'
 
 var divCount = 1;
 
+setInterval(displayHello, 1000);
 
+function displayHello() {
+  document.getElementById("start").innerHTML = "";
+  document.getElementById("start").innerHTML += `Hello${divCount}`;
+}
 
 const titAr = ["💚","🧩", "🦎","🤮","🧽","🤮","😵","✨","🧚‍♂️","💫","💿","📡","🧼","🦠","🔮"];
 let titAdd  = 0;

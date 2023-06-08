@@ -5,8 +5,11 @@ body{
   font-size: larger;
 }
 
-.text{
+.start{
+  color: #414141;
+}
 
+.text{
   color: rgb(0,0,0,0);
   /* position: fixed; */
 }
