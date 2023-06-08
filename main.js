@@ -36,8 +36,8 @@ document.onselectionchange = function() {
     var divStyler = document.getElementById(`Div${divCount}`);
     var mongoolStyler =  divStyler.querySelector(".mongool");
 
-    var selectionStyler = divStyler.MozSelection;
-    selectionStyler.background = "rgb(0,0,0)";
+    // var selectionStyler = divStyler.MozSelection;
+    // selectionStyler.background = "rgb(0,0,0)";
 
 
     divStyler.style.left = "0px";
