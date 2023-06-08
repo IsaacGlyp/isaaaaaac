@@ -9,6 +9,9 @@ document.onselectionchange = function() {
 
   let mouseUp = false;
 
+  document.addEventListener("mouseup", () => {
+    selection.collapse;
+  });
 
   if(selection.isCollapsed){
     cloned.innerHTML += current.innerHTML;
