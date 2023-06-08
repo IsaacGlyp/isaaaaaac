@@ -3,10 +3,18 @@ import './style.css'
 var divCount = 1;
 
 
+
 document.onselectionchange = function() {
   var selection = document.getSelection();
 
-  if(selection.isCollapsed){
+  let mouseUp = false;
+
+  document.addEventListener(this.onmouseup, () => {
+    mouseUp = true;
+  });
+
+
+  if(mouseUp){
     // cloned.innerHTML += current.innerHTML;
 
     var divEl = document.createElement("div");
@@ -37,7 +45,6 @@ document.onselectionchange = function() {
     current.innerHTML = current.innerHTML = "" ;
   }
   else{
-
     current.innerHTML = current.innerHTML = "" ;
   }
 
