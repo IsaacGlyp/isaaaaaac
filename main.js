@@ -6,8 +6,9 @@ const startAr = [" / ", " -- ", " \\ ", " | "];
 let startTemp = 1;
 let startAnim = 0;
 
+let interval = 200;
 
-setInterval(displayHello, 200);
+setInterval(displayHello, interval);
 
 function displayHello() {
   if(startAnim < 3){
@@ -20,8 +21,9 @@ function displayHello() {
   document.getElementById("start").innerHTML += `make a selection to begin${startAr[startAnim]}`;
 }
 
-document.addEventListener("click", () => {
+document.addEventListener("mousedown", () => {
   clearInterval(interval);
+  interval = null;
   document.getElementById("start").innerHTML = "";
 });
 
