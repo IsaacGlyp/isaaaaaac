@@ -42,7 +42,7 @@ document.onselectionchange = function() {
       let r = Math.random() * 50;
       let g = Math.random() * 50;
       let b = Math.random() * 50;
-      divStyler.style.backgroundImage = `linear-gradient(180deg, rgb(192, 255, 0,0) 0%, rgb(${122+r}, ${200+g}, ${b},0.5) 100%)`;
+      divStyler.style.backgroundImage = `linear-gradient(180deg, rgb(192, 255, 0,0) 0%, rgb(${152}, ${200+g}, ${100},0.5) 100%)`;
     }
 
     mongoolStyler.style.writingMode ='vertical-lr';
