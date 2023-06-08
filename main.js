@@ -2,11 +2,24 @@ import './style.css'
 
 var divCount = 1;
 
+const startAr = [" / ", " -- ", " \ ", " | "];
+let startTemp = 1;
+let startAnim = 0;
+
+
 setInterval(displayHello, 1000);
 
 function displayHello() {
+
+  if(startAnim < 3){
+    startAnim += startTemp;
+  }
+  else{
+    startAnim = 0;
+  }
+
   document.getElementById("start").innerHTML = "";
-  document.getElementById("start").innerHTML += `Hello${divCount}`;
+  document.getElementById("start").innerHTML += `Hello${startAr[startAnim]}`;
 }
 
 const titAr = ["💚","🧩", "🦎","🤮","🧽","🤮","😵","✨","🧚‍♂️","💫","💿","📡","🧼","🦠","🔮"];
