@@ -48,7 +48,7 @@ document.onselectionchange = function() {
     }
 
     titCount = 1;
-
+    console.log(titAdd);
 
     if(titAdd < 17){
       titAdd+=titCount
