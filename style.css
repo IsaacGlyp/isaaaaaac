@@ -5,7 +5,10 @@ body{
   font-size: larger;
 }
 
-
+body::-moz-selection{
+  color: #321945;
+  background: #f3ffd1;
+}
 
 .text{
 
