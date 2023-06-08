@@ -35,10 +35,7 @@ body{
   text-orientation: sideways-right;
 }
 
-.newDivs::-moz-selection{
-  color: #321945;
-  background: #f3ffd1;
-}
+
 
 .newDivs{
   color: #321945;
@@ -54,5 +51,9 @@ body{
   right: 100px;
   /* flex-wrap: nowrap; */
   margin-right: 30%;
+}
 
+.newDivs::-moz-selection{
+  color: #321945;
+  background: #f3ffd1;
 }
