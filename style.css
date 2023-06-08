@@ -18,7 +18,7 @@ body{
 
 
 .text::-moz-selection{
-  color: #000000;
+  color: #ffffff;
   background: #ff7d26;
 }
 
@@ -39,7 +39,6 @@ body{
 }
 
 
-
 .newDivs{
   color: #321945;
   /* overflow-y: scroll; */
@@ -56,7 +55,3 @@ body{
   margin-right: 30%;
 }
 
-.newDivs::-moz-selection{
-  color: #321945;
-  background: #f3ffd1;
-}
