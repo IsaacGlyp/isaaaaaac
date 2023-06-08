@@ -10,7 +10,7 @@ document.onselectionchange = function() {
   let mouseUp = false;
 
   document.addEventListener("mouseup", () => {
-    selection.collapse;
+    document.getSelection.collapse;
 
   });
 
