@@ -8,19 +8,20 @@ let startAnim = 0;
 
 
 setInterval(displayHello, 200);
-
 function displayHello() {
-
   if(startAnim < 3){
     startAnim += startTemp;
   }
   else{
     startAnim = 0;
   }
-
   document.getElementById("start").innerHTML = "";
   document.getElementById("start").innerHTML += `make a selection to begin${startAr[startAnim]}`;
 }
+
+document.addEventListener("mousedown", () => {
+  !displayHello;
+});
 
 const titAr = ["💚","🧩", "🦎","🤮","🧽","🤮","😵","✨","🧚‍♂️","💫","💿","📡","🧼","🦠","🔮"];
 let titAdd  = 0;
