@@ -8,6 +8,12 @@ let startAnim = 0;
 
 let interval = 200;
 
+document.addEventListener("mousedown", () => {
+  clearInterval(interval);
+  interval = null;
+  document.getElementById("start").innerHTML = "";
+});
+
 setInterval(displayHello, interval);
 
 function displayHello() {
@@ -21,11 +27,6 @@ function displayHello() {
   document.getElementById("start").innerHTML += `make a selection to begin${startAr[startAnim]}`;
 }
 
-document.addEventListener("mousedown", () => {
-  clearInterval(interval);
-  interval = null;
-  document.getElementById("start").innerHTML = "";
-});
 
 const titAr = ["💚","🧩", "🦎","🤮","🧽","🤮","😵","✨","🧚‍♂️","💫","💿","📡","🧼","🦠","🔮"];
 let titAdd  = 0;
