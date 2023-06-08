@@ -60,8 +60,7 @@ document.onselectionchange = function() {
     }
 
     var title = document.getElementById("title");
-    // title.innerHTML = titAr[titAdd] + "isaaaaaac"+ titAr[titAdd];
-    title.innerHTML = "is"+ titAr[titAdd] + titAr[titAdd] + titAr[titAdd] + titAr[titAdd] + titAr[titAdd] + titAr[titAdd] + "c" ;
+    title.innerHTML = titAr[titAdd] + "isaaaaaac"+ titAr[titAdd];
 
     mongoolStyler.style.writingMode ='vertical-lr';
     // divStyler.style.position = absolute;
