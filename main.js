@@ -20,7 +20,7 @@ document.onselectionchange = function() {
     document.getElementById("newDivs").prepend(divEl);
     //document.getElementById("newDivs").appendChild(divEl);
 
-    divStyler = document.getElementById(`Div${divCount+1}`);
+    divStyler = document.getElementById(`Div${divCount}`);
     mongoolStyler =  divStyler.querySelector(".mongool");
 
     // divStyler.style.overflowY = 'scroll';
