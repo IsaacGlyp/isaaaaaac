@@ -2,6 +2,8 @@ import './style.css'
 
 var divCount = 0;
 
+
+
 document.onselectionchange = function() {
   var selection = document.getSelection();
 
