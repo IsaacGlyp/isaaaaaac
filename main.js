@@ -37,7 +37,7 @@ setInterval(function() {
   document.getElementById("start").innerHTML += `make a selection to begin${startAr[startAnim]}`;
 }, 200);
 
-stop.addEventListener('click', function() {
+document.addEventListener('click', function() {
 	clearInterval(timerId);
   document.getElementById("start").innerHTML = "";
 });
