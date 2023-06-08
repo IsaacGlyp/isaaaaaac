@@ -1,15 +1,14 @@
 import './style.css'
 
-let divCount = 0;
-
+var divCount = 0;
 
 document.onselectionchange = function() {
-  let selection = document.getSelection();
+  var selection = document.getSelection();
 
   if(selection.isCollapsed){
     // cloned.innerHTML += current.innerHTML;
 
-    let divEl = document.createElement("div");
+    var divEl = document.createElement("div");
 
     divCount += 1;
     divEl.id = `Div${divCount}`;
