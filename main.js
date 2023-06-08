@@ -39,7 +39,9 @@ document.onselectionchange = function() {
       divStyler.style.color = "rgb(0,0,255)";
     }
     else{
-      divStyler.style.backgroundImage = "linear-gradient(180deg, rgb(192, 255, 0,0) 0%, rgb(192, 255, 0,0.5) 100%)";
+      let r = Math.random() * 50;
+      let g = Math.random() * 50;
+      divStyler.style.backgroundImage = `linear-gradient(180deg, rgb(192, 255, 0,0) 0%, rgb(${162+r}, ${200+g}, 0,0.5) 100%)`;
     }
 
     mongoolStyler.style.writingMode ='vertical-lr';
