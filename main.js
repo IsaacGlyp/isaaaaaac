@@ -59,7 +59,8 @@ document.onselectionchange = function() {
       titAr[titAdd];
     }
 
-    // var title = document.getElementById("title");
+    var title = document.getElementById("title");
+    title.innerHTML = titAr[titAdd];
 
     mongoolStyler.style.writingMode ='vertical-lr';
     // divStyler.style.position = absolute;
