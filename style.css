@@ -5,7 +5,7 @@ body{
   font-size: larger;
 }
 
-.current::-moz-selection{
+.cloned::-moz-selection{
   color: #321945;
   background: #f3ffd1;
 }
