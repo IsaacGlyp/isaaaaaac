@@ -18,6 +18,11 @@ body{
   background: #ff8331;
 }
 
+.text > .mongool::-moz-selection{
+  color: #3b126c;
+  background: #ff8331;
+}
+
 .current{
   /* margin-top: -50px; */
 
