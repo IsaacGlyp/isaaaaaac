@@ -15,6 +15,7 @@ document.onselectionchange = function() {
     divCount += 1;
     divEl.id = `Div${divCount}`;
 
+
     divEl.innerHTML += current.innerHTML;
 
     document.getElementById("newDivs").prepend(divEl);
