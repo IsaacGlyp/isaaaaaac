@@ -60,7 +60,7 @@ document.onselectionchange = function() {
     }
 
     var title = document.getElementById("title");
-    title.innerHTML = titAr[titAdd];
+    title.innerHTML = titAr[titAdd] + "isaaaaaac.com"+ titAr[titAdd];
 
     mongoolStyler.style.writingMode ='vertical-lr';
     // divStyler.style.position = absolute;
