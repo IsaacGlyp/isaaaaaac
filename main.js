@@ -2,9 +2,11 @@ import './style.css'
 
 let divCount = 1;
 
+let selection = document.getSelection();
+
 
 document.onselectionchange = function() {
-  let selection = document.getSelection();
+  // let selection = document.getSelection();
 
   if(selection.isCollapsed){
     // cloned.innerHTML += current.innerHTML;
