@@ -2,7 +2,7 @@ import './style.css'
 
 var divCount = 1;
 
-const startAr = [" / ", " -- ", " \ ", " | "];
+const startAr = [" / ", " -- ", " \\ ", " | "];
 let startTemp = 1;
 let startAnim = 0;
 
