@@ -18,8 +18,8 @@ body{
 
 
 .text::-moz-selection{
-  color: #ffffff;
-  background: #a800ff;
+  color: #000000;
+  background: #ff6600;
 }
 
 .current{
