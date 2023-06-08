@@ -5,6 +5,11 @@ body{
   font-size: larger;
 }
 
+::-moz-selection {
+  color: rgb(21, 255, 0);
+  background: #3b126c;
+}
+
 .start{
   color: #414141;
 }
