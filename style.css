@@ -16,7 +16,7 @@ body{
 
 .text::-moz-selection{
   color: #ffffff;
-  background: #9700e6;
+  background: #a800ff;
 }
 
 .current{
@@ -35,8 +35,13 @@ body{
   text-orientation: sideways-right;
 }
 
+.newDivs::-moz-selection{
+  color: #321945;
+  background: #f3ffd1;
+}
+
 .newDivs{
-  color: #000000;
+  color: #321945;
   /* overflow-y: scroll; */
   /* width: 100%; */
   height: 300px;
