@@ -3,7 +3,7 @@ import './style.css'
 var divCount = 1;
 
 
-const titAr = ["🦎", "🌪","🕷","🤮","🧚‍♂️","😵","🤳🏼","💫","✨","🧩","💿","📡","🛠","🦠","🔮","🧼","🧽","💚"];
+const titAr = ["💚","🧩", "🦎","🤮","🧽","🤮","😵","✨","🧚‍♂️","💫","💿","📡","🧼","🦠","🔮"];
 let titAdd  = 0;
 let titAdd1 = 1;
 let titAdd2 = 2;
@@ -52,39 +52,40 @@ document.onselectionchange = function() {
     }
 
     let titCount = 1;
+    let amountOfTits = 13;
     console.log(titAdd);
 
-    if(titAdd < 17){
+    if(titAdd < amountOfTits){
       titAdd += titCount;
     }
     else{
       titAdd = 0;
     }
-    if(titAdd1 < 17){
+    if(titAdd1 < amountOfTits){
       titAdd1 += titCount;
     }
     else{
       titAdd1 = 0;
     }
-    if(titAdd2 < 17){
+    if(titAdd2 < amountOfTits){
       titAdd2 += titCount;
     }
     else{
       titAdd2 = 0;
     }
-    if(titAdd3 < 17){
+    if(titAdd3 < amountOfTits){
       titAdd3 += titCount;
     }
     else{
       titAdd3 = 0;
     }
-    if(titAdd4 < 17){
+    if(titAdd4 < amountOfTits){
       titAdd4 += titCount;
     }
     else{
       titAdd4 = 0;
     }
-    if(titAdd5 < 17){
+    if(titAdd5 < amountOfTits){
       titAdd5 += titCount;
     }
     else{
