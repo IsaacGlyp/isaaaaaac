@@ -140,6 +140,7 @@ document.onselectionchange = function() {
 
   }
   else{
+    cloned.innerHTML = loned.innerHTML = "" ;
     current.innerHTML = current.innerHTML = "" ;
   }
 
