@@ -132,7 +132,7 @@ document.onselectionchange = function() {
   }
   else{
     // veranderd voor laatste deployment
-    cloned.innerHTML = loned.innerHTML = "" ;
+    cloned.innerHTML = cloned.innerHTML = "" ;
     current.innerHTML = current.innerHTML = "" ;
   }
 
