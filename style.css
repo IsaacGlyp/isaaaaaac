@@ -1,16 +1,15 @@
 body{
-  /* background-color: rgb(238, 255, 0); */
   background-color: #cdd9cf;
   font-family: monospace;
   font-size: larger;
 }
-
+/* // veranderd voor laatste deployment */
 ::-moz-selection {
   color: rgb(165,255,110);
   background: #3b126c;
 
 }
-
+/* // veranderd voor laatste deployment */
 ::selection {
   color: rgb(165,255,110);
   background:#3b126c;
@@ -22,7 +21,6 @@ body{
 
 .text{
   color: rgb(0,0,0,0);
-  /* position: fixed; */
 }
 
 .text::-moz-selection{
@@ -61,7 +59,6 @@ body{
   /* width: 100%; */
   height: 300px;
   display: flex;
-
   /* margin: 5%; */
   top: 10px;
   position: relative;

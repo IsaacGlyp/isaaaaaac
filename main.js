@@ -36,7 +36,6 @@ const startElement = document.getElementById("start");
     };
 
 
-
 const titAr = ["💚","🧩", "🦎","🤮","🧽","🤮","😵","✨","🧚‍♂️","💫","💿","📡","🧼","🦠","🔮"];
 let titAdd  = 0;
 let titAdd1 = 1;
@@ -59,20 +58,13 @@ document.onselectionchange = function() {
     cloned.innerHTML += current.innerHTML;
 
     var divEl = document.createElement("div");
-
     divCount += 1;
-
     divEl.id = `Div${divCount}`;
-
     divEl.innerHTML += current.innerHTML;
 
     document.getElementById("newDivs").prepend(divEl);
     var divStyler = document.getElementById(`Div${divCount}`);
     var mongoolStyler =  divStyler.querySelector(".mongool");
-
-    // var selectionStyler = divStyler.MozSelection;
-    // selectionStyler.background = "rgb(0,0,0)";
-
 
     divStyler.style.left = "0px";
     divStyler.style = "0px";
@@ -131,7 +123,6 @@ document.onselectionchange = function() {
     }
 
     var title = document.getElementById("title");
-    // title.innerHTML = titAr[titAdd] + "isaaaaaac"+ titAr[titAdd];
     title.innerHTML = "is"+ titAr[titAdd5] + titAr[titAdd4] + titAr[titAdd3] + titAr[titAdd2] + titAr[titAdd1] + titAr[titAdd] + "c" ;
 
     mongoolStyler.style.writingMode ='vertical-lr';
@@ -140,11 +131,11 @@ document.onselectionchange = function() {
 
   }
   else{
+    // veranderd voor laatste deployment
     cloned.innerHTML = loned.innerHTML = "" ;
     current.innerHTML = current.innerHTML = "" ;
   }
 
-  // Clone DOM nodes from ranges (we support multiselect here)
   for (let i = 0; i < selection.rangeCount; i++) {
     current.append(selection.getRangeAt(i).cloneContents());
   }
