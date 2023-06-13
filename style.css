@@ -11,7 +11,7 @@ body{
 }
 /* // veranderd voor laatste deployment */
 ::selection {
-  color: rgb(165,255,110);
+  color: rgb(0, 255, 0);
   background:#3b126c;
 }
 
