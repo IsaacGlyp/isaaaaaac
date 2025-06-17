@@ -1,0 +1,89 @@
+:root {
+    --txtPurple: #3b126c;
+    --txtGreen: #81ff33;
+    --lightPurple: #5e17b5;
+    --txtOrange: #ff4e2f;
+    /* --bg: #f1fff0; */
+  }
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container-bg {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* or less, like 50vh if you want only the lower part */
+    pointer-events: none; /* lets clicks go through if needed */
+    z-index: -1; /* sits behind your content */
+    background: linear-gradient(
+      180deg,
+      #aaaaaa 0%,
+      #ffffff 100%
+    );
+}
+
+body{
+    margin: 0;
+    word-break: break-word;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 0.5rem;
+    word-break: break-all;
+    }
+
+.boxes{
+    display: flex;
+}
+
+.box1{
+    overflow-y: scroll;
+    flex: 1;
+    height: 100vh;
+
+}
+
+.box2{
+    display: flex;
+    width: 70%;
+}
+
+.naam{
+
+    color: #3b126c;
+    text-shadow: 1px 1px 0.2em #81ff33;
+    font-family:monospace;
+    font-size: 400%;
+
+}
+
+.naam:visited{
+     color: #3b126c;
+}
+
+.naam:hover{
+    color:rgb(165,255,110);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+
+}
+
+.banner{
+    color: #3b126c;
+}
+
+.spanLinks{
+    color: aliceblue;
+    font-style: italic;
+}
+
+
+
+
+
+
