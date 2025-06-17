@@ -1,3 +1,4 @@
+import './style.css'
 "use strict";
 console.log("hallo wereld")
 
