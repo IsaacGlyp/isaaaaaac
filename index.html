@@ -84,7 +84,7 @@ let runnerFunc = (() => {
 
     function setRunnerSpeed(fast) {
   clearInterval(myIntervalID);
-  let baseTime = isMobileDevice() ? 1000 : 200; // mobile slower baseline
+  let baseTime = isMobileDevice() ? 1000 : 50; // mobile slower baseline
   myIntervalID = setInterval(runnerFunc, fast ? 2000 : baseTime); // 2000 when "testje" is true
 }
 
