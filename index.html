@@ -82,15 +82,31 @@ let runnerFunc = (() => {
 
     counter +=1;
 
-    if (testje) {
-      clearInterval(myIntervalID);
-      myIntervalID = setInterval(runnerFunc, 2000);
-    } else {
-      clearInterval(myIntervalID);
-      myIntervalID = setInterval(runnerFunc, 200);
-    }
+    function setRunnerSpeed(fast) {
+  clearInterval(myIntervalID);
+  let baseTime = isMobileDevice() ? 1000 : 200; // mobile slower baseline
+  myIntervalID = setInterval(runnerFunc, fast ? 2000 : baseTime); // 2000 when "testje" is true
+}
 
-    amountOfTits = titAr.length-1;
+title.onmouseover = () => {
+  testje = true;
+  setRunnerSpeed(true);
+};
+
+title.onmouseout = () => {
+  testje = false;
+  setRunnerSpeed(false);
+};
+
+window.onblur = () => {
+  testje = true;
+  setRunnerSpeed(true);
+};
+
+window.onfocus = () => {
+  testje = false;
+  setRunnerSpeed(false);
+};
 
   if(titAdd1 < amountOfTits){
     titAdd1 += titCount;
