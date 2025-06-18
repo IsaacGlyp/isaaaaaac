@@ -193,10 +193,10 @@ for (let i = 0; i < hueRanges.length; i++) {
 let nodeLink;
 
 let logColor = (() => {
-  for (let i = 0; i < hues.length; i+0.5) {
+  for (let i = 0; i < hues.length; i++) {
       hues[i] += directions[i];
       if (hues[i] < hueRanges[i].min || hues[i] > hueRanges[i].max) {
-          directions[i] *= -0.5;
+          directions[i] *= -1;
       }
       spanCol[i] = `hsl(270, 80%, ${hues[i]}%)`;
   }
