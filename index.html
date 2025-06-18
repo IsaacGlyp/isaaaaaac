@@ -192,44 +192,35 @@ for (let i = 0; i < hueRanges.length; i++) {
 
 let nodeLink;
 
+let speed = 0.3; // adjust this value to change the speed
+
 let logColor = (() => {
   for (let i = 0; i < hues.length; i++) {
-      hues[i] += directions[i];
+      hues[i] += directions[i] * speed;
       if (hues[i] < hueRanges[i].min || hues[i] > hueRanges[i].max) {
           directions[i] *= -1;
       }
       spanCol[i] = `hsl(270, 80%, ${hues[i]}%)`;
   }
-    let links = document.querySelectorAll('.spanLinks');
 
-    links.forEach(link => {
+  let links = document.querySelectorAll('.spanLinks');
 
-        if (link !== nodeLink) {
-          if(link.id == "spL0"){
-          link.style.color = spanCol[0];
-        }
-        if(link.id == "spL1"){
-          link.style.color = spanCol[1];
-        }
-        if(link.id == "spL2"){
-          link.style.color = spanCol[2];
-        }
-        if(link.id == "spL3"){
-          link.style.color = spanCol[3];
-        }
-        if(link.id == "spL4"){
-          link.style.color = spanCol[4];
-        }
-        if(link.id == "spL5"){
-          link.style.color = spanCol[5];
-        }
+  links.forEach(link => {
+      if (link !== nodeLink) {
+          if (link.id == "spL0") link.style.color = spanCol[0];
+          if (link.id == "spL1") link.style.color = spanCol[1];
+          if (link.id == "spL2") link.style.color = spanCol[2];
+          if (link.id == "spL3") link.style.color = spanCol[3];
+          if (link.id == "spL4") link.style.color = spanCol[4];
+          if (link.id == "spL5") link.style.color = spanCol[5];
       }
-    });
+  });
 
-    requestAnimationFrame(logColor);
+  requestAnimationFrame(logColor);
 });
 
 logColor();
+
 
 function fadeColor(link, originalColor) {
   link.style.transition = "color 0.3s"; // Smooth transition over 0.5 seconds
